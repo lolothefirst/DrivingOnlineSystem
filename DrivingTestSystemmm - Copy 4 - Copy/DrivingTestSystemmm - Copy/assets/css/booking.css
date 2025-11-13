@@ -1,0 +1,177 @@
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.session-card {
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.session-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-lg);
+}
+
+.session-type {
+  margin-bottom: 1rem;
+}
+
+.session-details {
+  margin-bottom: 1.5rem;
+}
+
+.session-date {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.session-time {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.session-location,
+.session-examiner,
+.session-slots {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.bookings-list-full {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-card {
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.booking-card.upcoming {
+  border-color: var(--primary-color);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.booking-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-id {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.booking-content {
+  padding: 1.5rem;
+}
+
+.booking-info {
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 0.75rem;
+}
+
+.info-item strong {
+  color: var(--text-secondary);
+  display: inline-block;
+  min-width: 120px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.result-card {
+  position: relative;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.result-header h3 {
+  font-size: 1.25rem;
+}
+
+.result-score {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.score-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.score-max {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.score-percentage {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.result-details {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+.detail-item {
+  margin-bottom: 0.75rem;
+}
+
+.detail-item p {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+}
